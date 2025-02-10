@@ -6,6 +6,11 @@ function addProduct() {
     const price = parseFloat(document.getElementById("productPrice").value);
     const stock = parseInt(document.getElementById("productStock").value);
     const category = document.getElementById("productCategory").value;
+
+    if (!name || isNaN(price) || isNaN(stock)) {
+        alert("กรุณากรอกข้อมูลให้ครบ");
+        return;
+    }
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
