@@ -2,7 +2,10 @@ let products = JSON.parse(localStorage.getItem("products")) || [];
 
 // ฟังก์ชันเพิ่มสินค้าใหม่
 function addProduct() {
-    // สร้างสินค้าใหม่และเพิ่มลงในอาร์เรย์
+    const name = document.getElementById("productName").value;
+    const price = parseFloat(document.getElementById("productPrice").value);
+    const stock = parseInt(document.getElementById("productStock").value);
+    const category = document.getElementById("productCategory").value;
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
