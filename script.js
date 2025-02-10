@@ -141,7 +141,8 @@ function saveEditedProduct() {
     }
     products = products.map(product =>
         product.id === editProductId ? { ...product, name, price, inStock: stock, category } : product);
-}
+    localStorage.setItem("products", JSON.stringify(products)); 
+    }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
 function cancelEdit() {
