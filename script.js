@@ -188,6 +188,7 @@ function checkLowStock() {
 
 // ฟังก์ชันแสดงสินค้า
 function displayProducts() {
+    const list = document.getElementById("productList");
 }
 
 //  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
