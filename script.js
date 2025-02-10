@@ -61,6 +61,7 @@ function sellProduct() {
 function generateSalesReport() {
     const bestSellerList = document.getElementById("bestSellers");
     bestSellerList.innerHTML = "";
+    const sortedProducts = [...products].sort((a, b) => b.totalSales - a.totalSales);
 }
 
 // ฟังก์ชันค้นหาสินค้า
