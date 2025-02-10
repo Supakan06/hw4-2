@@ -33,6 +33,8 @@ function updateStock(productId, quantity) {
     products = products.map(product =>
         product.id === productId ? { ...product, inStock: product.inStock + quantity } : product
     );
+
+    localStorage.setItem("products", JSON.stringify(products));
 }
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
