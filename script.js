@@ -130,6 +130,7 @@ function editProduct() {
 
 // ฟังก์ชันบันทึกข้อมูลสินค้าที่แก้ไข
 function saveEditedProduct() { 
+    if (!editProductId) return;
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
