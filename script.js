@@ -109,6 +109,7 @@ function deleteProduct(productId) {
     if (confirm("คุณแน่ใจหรือไม่ว่าต้องการลบสินค้านี้?")) {
         products = products.filter(product => product.id !== productId);
         localStorage.setItem("products", JSON.stringify(products));
+        displayProducts();
     }
 }
 
