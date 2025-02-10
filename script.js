@@ -156,6 +156,7 @@ function cancelEdit() {
 
 // ฟังก์ชันอัปเดตเวลาที่อัปเดตล่าสุด
 function updateLastUpdated() {
+    document.getElementById("lastUpdated").innerText = `⏳ อัปเดตล่าสุด: ${new Date().toLocaleString()}`;
 }
 
 // ฟังก์ชันล้างข้อมูลคลังสินค้า
