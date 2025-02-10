@@ -211,6 +211,7 @@ function displayProducts() {
             ✏️ <button type="button" class="btn btn-info" onclick="editProduct('${product.id}')">แก้ไข</button>
             🗑️ <button type="button" class="btn btn-danger" onclick="deleteProduct('${product.id}')">ลบ</button>
         `;
+        list.appendChild(li);
     });
 }
 
