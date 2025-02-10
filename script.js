@@ -85,6 +85,7 @@ function searchProduct() {
 // ฟังก์ชันแสดงสินค้าที่ค้นหา
 function displayFilteredProducts(filteredProducts) {
     const list = document.getElementById("productList"); 
+    list.innerHTML = ""; 
 }
 
 // ฟังก์ชันลบสินค้า
