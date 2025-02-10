@@ -79,6 +79,7 @@ function searchProduct() {
         product.name.toLowerCase().includes(searchTerm) || 
         product.category.toLowerCase().includes(searchTerm)
     );
+    displayFilteredProducts(filteredProducts);
 }
 
 // ฟังก์ชันแสดงสินค้าที่ค้นหา
