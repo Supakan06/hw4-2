@@ -29,8 +29,10 @@ function addProduct() {
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
-function updateStock() {
-    // อัปเดตค่าในอาร์เรย์โดยใช้ .map()
+function updateStock(productId, quantity) {
+    products = products.map(product =>
+        product.id === productId ? { ...product, inStock: product.inStock + quantity } : product
+    );
 }
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
