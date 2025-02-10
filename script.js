@@ -143,6 +143,7 @@ function saveEditedProduct() {
         product.id === editProductId ? { ...product, name, price, inStock: stock, category } : product);
     localStorage.setItem("products", JSON.stringify(products)); 
     displayProducts();
+    updateLastUpdated(); 
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
