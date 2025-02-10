@@ -118,6 +118,7 @@ function deleteProduct(productId) {
 let editProductId = null; // เก็บ ID สินค้าที่กำลังแก้ไข
 function editProduct() {
     const product = products.find(p => p.id === productId); 
+    if (!product) return;
 }
 
 // ฟังก์ชันบันทึกข้อมูลสินค้าที่แก้ไข
