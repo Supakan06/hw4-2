@@ -36,6 +36,7 @@ function updateStock(productId, quantity) {
 
     localStorage.setItem("products", JSON.stringify(products));
     displayProducts();
+    updateLastUpdated();
 }
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
