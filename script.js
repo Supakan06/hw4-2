@@ -75,6 +75,10 @@ function generateSalesReport() {
 // ฟังก์ชันค้นหาสินค้า
 function searchProduct() {
     const searchTerm = document.getElementById("searchInput").value.toLowerCase(); 
+    const filteredProducts = products.filter(product => 
+        product.name.toLowerCase().includes(searchTerm) || 
+        product.category.toLowerCase().includes(searchTerm)
+    );
 }
 
 // ฟังก์ชันแสดงสินค้าที่ค้นหา
