@@ -190,6 +190,9 @@ function checkLowStock() {
 function displayProducts() {
     const list = document.getElementById("productList");
     list.innerHTML = "";
+    products.forEach(product => {
+        let li = document.createElement("li");
+    });
 }
 
 //  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
