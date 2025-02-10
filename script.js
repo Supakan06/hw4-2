@@ -125,6 +125,7 @@ function editProduct() {
     document.getElementById("editProductStock").value = product.inStock;
     document.getElementById("editProductCategory").value = product.category;
     editProductId = productId;
+    document.getElementById("editForm").style.display = "block"; 
 }
 
 // ฟังก์ชันบันทึกข้อมูลสินค้าที่แก้ไข
