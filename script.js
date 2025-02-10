@@ -135,6 +135,10 @@ function saveEditedProduct() {
     const price = parseFloat(document.getElementById("editProductPrice").value);
     const stock = parseInt(document.getElementById("editProductStock").value);
     const category = document.getElementById("editProductCategory").value;
+    if (!name || isNaN(price) || isNaN(stock)) {
+        alert("กรุณากรอกข้อมูลให้ครบ");
+        return;
+    }
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
