@@ -214,6 +214,7 @@ function displayProducts() {
         list.appendChild(li);
     });
     generateSalesReport();
+    checkLowStock();
 }
 
 //  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
