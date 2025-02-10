@@ -171,6 +171,7 @@ function clearAllData() {
 
 // ฟังก์ชันแสดงสินค้าที่ใกล้หมดหรือหมด
 function checkLowStock() {
+    const lowStockList = document.getElementById("lowStockList");
 }
 
 // ฟังก์ชันแสดงสินค้า
