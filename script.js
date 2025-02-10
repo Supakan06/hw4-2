@@ -60,6 +60,7 @@ function sellProduct() {
 // ฟังก์ชันแสดงสินค้าขายดี
 function generateSalesReport() {
     const bestSellerList = document.getElementById("bestSellers");
+    bestSellerList.innerHTML = "";
 }
 
 // ฟังก์ชันค้นหาสินค้า
