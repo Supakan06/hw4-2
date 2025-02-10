@@ -193,6 +193,13 @@ function displayProducts() {
     products.forEach(product => {
         let li = document.createElement("li");
         let stockMessage = '';  
+        if (product.inStock === 0) {
+            stockMessage = `<strong class="low-stock-list">[สินค้าหมด!]</strong>`;
+        } else if (product.inStock <= 5) {
+            stockMessage = `<strong class="low-stock-list">[สินค้าใกล้หมด!]</strong>`;
+        }else{
+            stockMessage = `<strong class="low-stock-list">[จำนวนสินค้าเหลือ ${product.inStock} ชิ้น]</strong>`;
+        }
     });
 }
 
