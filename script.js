@@ -91,6 +91,13 @@ function displayFilteredProducts(filteredProducts) {
         li.innerHTML = `
             ${product.name} (${product.category}) - ${product.price} บาท 
             <strong class="${product.inStock < product.minStock ? 'low-stock-list' : ''}">[คงเหลือ: ${product.inStock} ชิ้น]</strong>
+             <br> //git commit -m  "เพิ่มปุ่มขาย เพิ่มสต็อก เเก้ไข ลบ"
+            📦 ขาย: <input type="number" id="sellAmount-${product.id}" min="1" value="1">
+            <button tpye="button" class="btn btn-success" onclick="sellProduct('${product.id}')">ขาย</button>
+            <button tpye="button" class="btn btn-warning" onclick="updateStock('${product.id}', 1)">+ เพิ่มสต็อก</button>
+            <br>
+            ✏️ <button type="button" class="btn btn-info" onclick="editProduct('${product.id}')">แก้ไข</button>
+            🗑️ <button type="button" class="btn btn-danger" onclick="deleteProduct('${product.id}')">ลบ</button>
     `;
     });
 }
