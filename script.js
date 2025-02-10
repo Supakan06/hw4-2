@@ -200,6 +200,17 @@ function displayProducts() {
         }else{
             stockMessage = `<strong class="low-stock-list">[จำนวนสินค้าเหลือ ${product.inStock} ชิ้น]</strong>`;
         }
+        li.innerHTML = `
+        ${product.name} (${product.category}) - ${product.price} บาท 
+        ${stockMessage}
+        <br>
+            📦 ขาย: <input type="number" id="sellAmount-${product.id}" min="1" value="1">
+            <button type="button" class="btn btn-success" onclick="sellProduct('${product.id}')">ขาย</button>
+            <button type="button" class="btn btn-warning" onclick="updateStock('${product.id}', 1)">+ เพิ่มสต็อก</button>
+        <br>    
+            ✏️ <button type="button" class="btn btn-info" onclick="editProduct('${product.id}')">แก้ไข</button>
+            🗑️ <button type="button" class="btn btn-danger" onclick="deleteProduct('${product.id}')">ลบ</button>
+        `;
     });
 }
 
