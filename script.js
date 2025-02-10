@@ -165,6 +165,7 @@ function clearAllData() {
         localStorage.removeItem("products");
         products = [];
         displayProducts();
+        updateLastUpdated();
     }
 }
 
