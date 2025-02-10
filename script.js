@@ -173,6 +173,7 @@ function clearAllData() {
 function checkLowStock() {
     const lowStockList = document.getElementById("lowStockList");
     lowStockList.innerHTML = "";
+    const lowStockProducts = products.filter(product => product.inStock <= 5);
 }
 
 // ฟังก์ชันแสดงสินค้า
