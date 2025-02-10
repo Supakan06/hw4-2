@@ -215,6 +215,7 @@ function displayProducts() {
     });
     generateSalesReport();
     checkLowStock();
+    updateLastUpdated();
 }
 
 //  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
