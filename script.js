@@ -86,6 +86,13 @@ function searchProduct() {
 function displayFilteredProducts(filteredProducts) {
     const list = document.getElementById("productList"); 
     list.innerHTML = ""; 
+    filteredProducts.forEach(product => { 
+        let li = document.createElement("li");
+        li.innerHTML = `
+            ${product.name} (${product.category}) - ${product.price} บาท 
+            <strong class="${product.inStock < product.minStock ? 'low-stock-list' : ''}">[คงเหลือ: ${product.inStock} ชิ้น]</strong>
+    `;
+    });
 }
 
 // ฟังก์ชันลบสินค้า
