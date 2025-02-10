@@ -162,6 +162,7 @@ function updateLastUpdated() {
 // ฟังก์ชันล้างข้อมูลคลังสินค้า
 function clearAllData() {
     if (confirm("คุณแน่ใจหรือไม่ว่าต้องการล้างข้อมูลทั้งหมด?")) {
+        localStorage.removeItem("products");
     }
 }
 
