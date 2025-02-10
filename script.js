@@ -25,6 +25,7 @@ function addProduct() {
     products.push(newProduct);
     localStorage.setItem("products", JSON.stringify(products));
     displayProducts();
+    updateLastUpdated();
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
