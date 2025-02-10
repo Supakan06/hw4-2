@@ -101,6 +101,7 @@ function displayFilteredProducts(filteredProducts) {
         `;
         list.appendChild(li);
     });
+    generateSalesReport();
 }
 
 // ฟังก์ชันลบสินค้า
