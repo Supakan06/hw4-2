@@ -145,6 +145,7 @@ function saveEditedProduct() {
     displayProducts();
     updateLastUpdated(); 
     document.getElementById("editForm").style.display = "none";
+    editProductId = null;
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
