@@ -150,6 +150,8 @@ function saveEditedProduct() {
 
 // ฟังก์ชันยกเลิกการเเก้ไข
 function cancelEdit() {
+    document.getElementById("editForm").style.display = "none";
+
 }
 
 // ฟังก์ชันอัปเดตเวลาที่อัปเดตล่าสุด
