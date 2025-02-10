@@ -181,6 +181,8 @@ function checkLowStock() {
     lowStockProducts.forEach(product => {
         let li = document.createElement("li");
         let stockMessage = product.inStock === 0 ? "สินค้าหมด!" : `เหลือ ${product.inStock} ชิ้น`;
+        li.innerHTML = `<span class="low-stock">${product.name} - ${stockMessage}</span>`;
+        lowStockList.appendChild(li);
     });
 }
 
