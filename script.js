@@ -40,7 +40,7 @@ function updateStock(productId, quantity) {
 }
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
-function sellProduct() {
+function sellProduct(productId) {
     let amount = parseInt(document.getElementById(`sellAmount-${productId}`).value);
     products = products.map(product => {
         if (product.id === productId && product.inStock >= amount) {
