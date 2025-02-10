@@ -35,6 +35,7 @@ function updateStock(productId, quantity) {
     );
 
     localStorage.setItem("products", JSON.stringify(products));
+    displayProducts();
 }
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
