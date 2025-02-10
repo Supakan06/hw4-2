@@ -151,7 +151,7 @@ function saveEditedProduct() {
 // ฟังก์ชันยกเลิกการเเก้ไข
 function cancelEdit() {
     document.getElementById("editForm").style.display = "none";
-
+    editProductId = null;
 }
 
 // ฟังก์ชันอัปเดตเวลาที่อัปเดตล่าสุด
