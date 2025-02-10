@@ -131,6 +131,10 @@ function editProduct() {
 // ฟังก์ชันบันทึกข้อมูลสินค้าที่แก้ไข
 function saveEditedProduct() { 
     if (!editProductId) return;
+    const name = document.getElementById("editProductName").value;
+    const price = parseFloat(document.getElementById("editProductPrice").value);
+    const stock = parseInt(document.getElementById("editProductStock").value);
+    const category = document.getElementById("editProductCategory").value;
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
