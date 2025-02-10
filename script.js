@@ -23,6 +23,7 @@ function addProduct() {
     };
 
     products.push(newProduct);
+    localStorage.setItem("products", JSON.stringify(products));
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
