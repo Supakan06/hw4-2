@@ -41,7 +41,7 @@ function updateStock(productId, quantity) {
 
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
 function sellProduct() {
-     // บันทึกข้อมูลสินค้าอัปเดตลงใน localStorage
+    let amount = parseInt(document.getElementById(`sellAmount-${productId}`).value);
 }
 
 // ฟังก์ชันแสดงสินค้าขายดี
