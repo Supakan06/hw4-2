@@ -110,6 +110,7 @@ function deleteProduct(productId) {
         products = products.filter(product => product.id !== productId);
         localStorage.setItem("products", JSON.stringify(products));
         displayProducts();
+        updateLastUpdated();
     }
 }
 
