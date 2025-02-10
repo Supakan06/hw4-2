@@ -74,7 +74,7 @@ function generateSalesReport() {
 
 // ฟังก์ชันค้นหาสินค้า
 function searchProduct() {
-   // กรองสินค้าตามคำค้นหา
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase(); 
 }
 
 // ฟังก์ชันแสดงสินค้าที่ค้นหา
