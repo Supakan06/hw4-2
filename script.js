@@ -1,4 +1,4 @@
-// โหลดข้อมูลสินค้าจาก localStorage 
+let products = JSON.parse(localStorage.getItem("products")) || [];
 
 // ฟังก์ชันเพิ่มสินค้าใหม่
 function addProduct() {
