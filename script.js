@@ -144,6 +144,7 @@ function saveEditedProduct() {
     localStorage.setItem("products", JSON.stringify(products)); 
     displayProducts();
     updateLastUpdated(); 
+    document.getElementById("editForm").style.display = "none";
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
