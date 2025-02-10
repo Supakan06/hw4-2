@@ -11,6 +11,16 @@ function addProduct() {
         alert("กรุณากรอกข้อมูลให้ครบ");
         return;
     }
+
+    const newProduct = {
+        id: Date.now().toString(),
+        name,
+        price,
+        inStock: stock,
+        category,
+        totalSales: 0,
+        minStock: 5
+    };
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
