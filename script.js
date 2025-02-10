@@ -178,6 +178,10 @@ function checkLowStock() {
         lowStockList.innerHTML = "<li>ไม่มีสินค้าใกล้หมด</li>";
         return;
     }
+    lowStockProducts.forEach(product => {
+        let li = document.createElement("li");
+        let stockMessage = product.inStock === 0 ? "สินค้าหมด!" : `เหลือ ${product.inStock} ชิ้น`;
+    });
 }
 
 // ฟังก์ชันแสดงสินค้า
