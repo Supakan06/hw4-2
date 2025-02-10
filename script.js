@@ -42,6 +42,16 @@ function updateStock(productId, quantity) {
 // ฟังก์ชันขายสินค้า (เลือกจำนวนได้)
 function sellProduct() {
     let amount = parseInt(document.getElementById(`sellAmount-${productId}`).value);
+    products = products.map(product => {
+        if (product.id === productId && product.inStock >= amount) {
+            return { 
+                ...product, 
+                inStock: product.inStock - amount, 
+                totalSales: product.totalSales + amount
+            };
+        } 
+        return product;
+    });
 }
 
 // ฟังก์ชันแสดงสินค้าขายดี
