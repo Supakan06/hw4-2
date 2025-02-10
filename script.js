@@ -54,6 +54,7 @@ function sellProduct() {
     });
     localStorage.setItem("products", JSON.stringify(products));
     displayProducts();
+    updateLastUpdated(); 
 }
 
 // ฟังก์ชันแสดงสินค้าขายดี
