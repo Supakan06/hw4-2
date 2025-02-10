@@ -139,6 +139,8 @@ function saveEditedProduct() {
         alert("กรุณากรอกข้อมูลให้ครบ");
         return;
     }
+    products = products.map(product =>
+        product.id === editProductId ? { ...product, name, price, inStock: stock, category } : product);
 }
 
 // ฟังก์ชันยกเลิกการเเก้ไข
