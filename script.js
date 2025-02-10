@@ -83,7 +83,8 @@ function searchProduct() {
 }
 
 // ฟังก์ชันแสดงสินค้าที่ค้นหา
-function displayFilteredProducts() {
+function displayFilteredProducts(filteredProducts) {
+    const list = document.getElementById("productList"); 
 }
 
 // ฟังก์ชันลบสินค้า
