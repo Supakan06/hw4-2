@@ -59,7 +59,7 @@ function sellProduct() {
 
 // ฟังก์ชันแสดงสินค้าขายดี
 function generateSalesReport() {
-    // เพิ่มสินค้าไปยังรายการสินค้าขายดี
+    const bestSellerList = document.getElementById("bestSellers");
 }
 
 // ฟังก์ชันค้นหาสินค้า
