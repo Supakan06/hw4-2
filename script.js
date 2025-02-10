@@ -213,6 +213,7 @@ function displayProducts() {
         `;
         list.appendChild(li);
     });
+    generateSalesReport();
 }
 
 //  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
