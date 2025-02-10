@@ -192,6 +192,7 @@ function displayProducts() {
     list.innerHTML = "";
     products.forEach(product => {
         let li = document.createElement("li");
+        let stockMessage = '';  
     });
 }
 
