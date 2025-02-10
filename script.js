@@ -62,6 +62,14 @@ function generateSalesReport() {
     const bestSellerList = document.getElementById("bestSellers");
     bestSellerList.innerHTML = "";
     const sortedProducts = [...products].sort((a, b) => b.totalSales - a.totalSales);
+
+    sortedProducts.forEach(product => {
+        if (product.totalSales > 0) {
+            let li = document.createElement("li");
+            li.innerHTML = `<span class="best-seller">${product.name}</span> - ขายแล้ว ${product.totalSales} ชิ้น`;
+            bestSellerList.appendChild(li); 
+        }
+    });
 }
 
 // ฟังก์ชันค้นหาสินค้า
