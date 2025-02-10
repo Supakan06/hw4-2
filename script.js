@@ -21,6 +21,8 @@ function addProduct() {
         totalSales: 0,
         minStock: 5
     };
+
+    products.push(newProduct);
 }
 
 // ฟังก์ชันเพิ่มสต็อกสินค้า
