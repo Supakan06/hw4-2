@@ -218,4 +218,4 @@ function displayProducts() {
     updateLastUpdated();
 }
 
-//  ใช้ DOM เเสดงสินค้าเมื่อหน้าเว็บโหลดเสร็จ
+document.addEventListener("DOMContentLoaded", displayProducts); 
